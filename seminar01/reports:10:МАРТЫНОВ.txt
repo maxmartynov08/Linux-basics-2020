@@ -57,4 +57,183 @@ maksimmartynov@MacBook-Air work % tail -5 /etc/passwd | cat > last5.txt
 12) maksimmartynov@MacBook-Air ~ % ls -l /etc/ | wc -l
      112
 
+---------------------------------
+Задание 1
+
+1) maksimmartynov@MacBook-Air desktop % mkdir DirA DirB
+
+maksimmartynov@MacBook-Air desktop % cd DirA
+
+maksimmartynov@MacBook-Air DirA % cat > file1.txt
+aaaa   
+
+maksimmartynov@MacBook-Air DirA % cat > file2.txt
+bbbb
+
+maksimmartynov@MacBook-Air DirA % cd ..
+
+maksimmartynov@MacBook-Air desktop % cd DirB
+
+maksimmartynov@MacBook-Air DirB % cat > file1.txt
+cccc
+
+maksimmartynov@MacBook-Air DirB % cat > file2.txt
+dddd
+
+maksimmartynov@MacBook-Air DirB % cat ~/desktop/DirA/file1.txt ~/desktop/DirA/file2.txt file1.txt >> file2.txt
+
+2) maksimmartynov@MacBook-Air DirB % rm -rf ~/desktop/DirA ~/desktop/DirB
+
+-------------------------------
+Задание 2
+
+1) maksimmartynov@MacBook-Air desktop % grep 'maksimmartynov' /etc/passwd
+
+2) maksimmartynov@MacBook-Air ~ % date -v2021y -v1m -v1d
+Fri Jan  1 13:11:28 MSK 2021 -> Friday
+
+-----------------------------
+Задание 3
+
+1) maksimmartynov@MacBook-Air desktop % id > file.txt
+maksimmartynov@MacBook-Air desktop % ls -l >> file.txt
+maksimmartynov@MacBook-Air desktop % ps >> file.txt
+maksimmartynov@MacBook-Air desktop % date >> file.txt
+maksimmartynov@MacBook-Air desktop % grep "file.txt" file.txt
+-rw-r--r--@  1 maksimmartynov  staff       333 Sep 13 13:15 file.txt
+
+2) maksimmartynov@MacBook-Air desktop % cal -y 2019 > file.txt
+
+---------------------------
+Задание 4
+
+1) maksimmartynov@MacBook-Air ~ % ls /etc | grep ".conf" | head   
+asl.conf
+autofs.conf
+kern_loader.conf
+kern_loader.conf~previous
+man.conf
+newsyslog.conf
+nfs.conf
+nfs.conf~orig
+notify.conf
+ntp.conf
+
+2) maksimmartynov@MacBook-Air desktop % mkdir useless
+maksimmartynov@MacBook-Air useless % chmod u-x ~/desktop/useless
+
+------------------------
+Задание 5
+
+1) maksimmartynov@MacBook-Air desktop % chmod 640 a.txt
+
+2) maksimmartynov@MacBook-Air desktop % chmod g-r a.txt
+
+-----------------------
+Задание 6
+
+1) maksimmartynov@MacBook-Air desktop % tar -czf archive.tar.gz a.txt b.txt
+
+2) maksimmartynov@MacBook-Air desktop % tar -xzf archive.tar.gz
+
+----------------------
+Задание 7
+
+1) maksimmartynov@MacBook-Air desktop % chmod 640 a.txt
+
+2) maksimmartynov@MacBook-Air desktop % chmod ug-w
+
+maksimmartynov@MacBook-Air desktop % chmod o+w a.txt
+
+---------------------
+Задание 8
+
+1) maksimmartynov@MacBook-Air desktop % cd /usr/bin
+
+maksimmartynov@MacBook-Air bin % ls | grep '^\z'
+zcat
+zcmp
+zdiff
+zegrep
+zfgrep
+zforce
+zgrep
+zip
+zipcloak
+zipdetails
+zipdetails5.18
+zipdetails5.28
+zipgrep
+zipinfo
+zipnote
+zipsplit
+zless
+zmore
+znew
+zprint
+
+2) maksimmartynov@MacBook-Air desktop % find . -ctime -1
+
+--------------------------
+Задание 9
+
+1) maksimmartynov@MacBook-Air ~ % find /usr/local . -user maksimmartynov | wc
+244869  420790 25044989
+
+
+2) maksimmartynov@MacBook-Air ~ % tail -5 /etc/passwd | wc -w
+      11
+
+---------------
+Задание 10
+
+1) maksimmartynov@MacBook-Air desktop %  > a.txt
+
+maksimmartynov@MacBook-Air desktop % mkdir b
+
+maksimmartynov@MacBook-Air desktop % ls -l
+-rw-r--r--@  1 maksimmartynov  staff         0 Sep 13 23:01 a.txt
+drwxr-xr-x@  2 maksimmartynov  staff        64 Sep 13 23:04 b
+
+2) maksimmartynov@MacBook-Air desktop % cd /etc
+
+maksimmartynov@MacBook-Air /etc % ls | grep ".conf" | head
+asl.conf
+autofs.conf
+kern_loader.conf
+kern_loader.conf~previous
+man.conf
+newsyslog.conf
+nfs.conf
+nfs.conf~orig
+notify.conf
+ntp.conf
+
+---------------
+Задание 11
+
+1) maksimmartynov@MacBook-Air desktop % > a.txt
+
+maksimmartynov@MacBook-Air desktop % chmod ug-w a.txt
+
+maksimmartynov@MacBook-Air desktop % chmod o+w a.txt
+
+2) maksimmartynov@MacBook-Air desktop % mv a.txt aaa.txt
+
+maksimmartynov@MacBook-Air desktop % cat > aaa.txt
+zsh: permission denied: aaa.txt
+
+maksimmartynov@MacBook-Air desktop % chmod u+w aaa.txt
+maksimmartynov@MacBook-Air desktop % cat > aaa.txt    
+Now i can write
+maksimmartynov@MacBook-Air desktop % rm aaa.txt
+
+
+
+
+
+
+
+
+
 

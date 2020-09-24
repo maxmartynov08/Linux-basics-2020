@@ -8,7 +8,7 @@ class Test1(unittest.TestCase):
         print(script_name)
         p = subprocess.Popen(['bash', script_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = p.communicate()
-
+        
         return int(stdout.decode('utf-8'))
 
 

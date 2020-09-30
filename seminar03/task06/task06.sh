@@ -2,5 +2,5 @@
 file='file.txt'
 while read line  || [ -n "$line" ];
 do
-    echo -n $line && echo $line | wc -w 
+    echo -n "$line " && echo $line | wc -w 
 done < "$file"

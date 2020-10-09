@@ -1,8 +1,11 @@
 # print your command here
 
-a. git init ...
+a. git init fake_repo
 
-b.
+b. git add bio.md
+git commit -m "Add top of bravit's tweets"
+git add main.cpp
+git commit -m "Add a simple c++ programm"
 
 c.
 

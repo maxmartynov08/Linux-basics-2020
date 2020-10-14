@@ -3,14 +3,29 @@
 a. git init fake_repo
 
 b. git add bio.md
-git commit -m "Add top of bravit's tweets"
+git commit -m "Add bio"
 git add main.cpp
 git commit -m "Add a simple c++ programm"
 
-c.
+c. touch .gitignore
+git add .gitignore
+git commit -m "Add binary and object files to .gitignore"
+git add Makefile
+git commit -m "Create Makefile"
 
-d.
+d. git add bio.md
+git commit -m "Random commit #1"
+git add bio.md
+git commit -m "Random commit #2"
+git add bio.md
+git commit -m "Random commit #3"
 
-e.
+e. git checkout f23f07ce147ab32b9160bdf09b32a3a5b61eed7d
+git switch -c cmake
+git add CMakeLists.txt
+git commit -m "Add CMaKeLists"
+git add .gitignore
+git commit -m "Add gitignore"
 
-f.
+f. git checkout master
+git merge cmake
